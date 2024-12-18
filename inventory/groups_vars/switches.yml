@@ -5,5 +5,5 @@ ansible_network_os: cisco.ios.ios
 ansible_become: yes
 ansible_become_method: enable
 ansible_user: a94245
-ansible_password: cisco123
-ansible_become_password: cisco123
+ansible_password: AQwsDErfTG@210599
+ansible_become_password: AQwsDErfTG@210599
