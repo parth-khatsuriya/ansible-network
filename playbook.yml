@@ -1,6 +1,6 @@
 ---
 - name: "Ansible Network"
-  hosts: 10.230.163.6
+  hosts: 10.44.1.100
   gather_facts: no
 
   tasks:
