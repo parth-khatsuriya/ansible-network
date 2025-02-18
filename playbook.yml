@@ -3,6 +3,13 @@
   hosts: 10.44.1.100
   gather_facts: no
 
+  vars: # for execution environment
+  
+    ansible_connection: ansible.netcommon.network_cli
+    ansible_network_os: cisco.ios.ios
+    ansible_become: yes
+    ansible_become_method: enable
+
   tasks:
     - name: Show Version
       cisco.ios.ios_command:
