@@ -11,9 +11,9 @@
     ansible_become_method: enable
 
   tasks:
-    - name: Show controller
+    - name: fabric 315 show inventory
       cisco.ios.ios_command:
-        commands: show controller
+        commands: fabric 315 show inventory
       register: output  # This stores the output in a variable named 'output'
 
     - name: Print output
