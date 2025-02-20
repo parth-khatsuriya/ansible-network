@@ -1,6 +1,6 @@
 ---
 - name: "Ansible Network"
-  hosts: 10.44.1.100
+  hosts: 10.230.192.12
   gather_facts: no
 
   vars: # for execution environment
@@ -11,9 +11,9 @@
     ansible_become_method: enable
 
   tasks:
-    - name: Show inventory
+    - name: Show controller
       cisco.ios.ios_command:
-        commands: show inventory
+        commands: show controller
       register: output  # This stores the output in a variable named 'output'
 
     - name: Print output
