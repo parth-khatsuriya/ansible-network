@@ -1,6 +1,6 @@
 ---
 - name: "Ansible Network"
-  hosts: 10.230.192.115
+  hosts: 10.230.163.6
   gather_facts: no
 
   vars: # for execution environment
