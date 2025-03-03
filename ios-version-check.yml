@@ -16,5 +16,6 @@
       register: ios_info
 
     - name: Display IOS Version
+      command: show version
       debug:
         msg: "The IOS Version is {{ ios_info.ansible_facts.net_version }}"
