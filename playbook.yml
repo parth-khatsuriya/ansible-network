@@ -11,9 +11,9 @@
     ansible_become_method: enable
 
   tasks:
-    - name: show inventory
+    - name: show version
       cisco.ios.ios_command:
-        commands: show inventory
+        commands: show version
       register: output  # This stores the output in a variable named 'output'
 
     - name: Print output
